@@ -1,6 +1,6 @@
 # Odev3
 
-Bu repo [Siliconmade Academy FFS 102 - FULL STACK]([https://kodluyoruz.org/tr/kodluyoruz/](https://siliconmadeacademy.com/) Front-End Eğitiminde oluşturduğumuz ilk repo. İçerisinde bir adet README dosyası, bir adet de index.html barındırıyor.
+Bu repo [Siliconmade Academy](https://siliconmadeacademy.com/) Full Stack Eğitiminde oluşturduğumuz ilk repo. İçerisinde bir adet README dosyası, bir adet de index.html barındırıyor.
 
 HTML, CSS, JavaScript ve Bootstrap kullanarak resim galerisi sayfasını oluşturuldu.
 
