@@ -1,6 +1,6 @@
 # Odev3
 
-Bu repo [Siliconmade Academy](https://siliconmadeacademy.com/) Full Stack Eğitiminde oluşturduğumuz ilk repo. İçerisinde bir adet README dosyası, bir adet de index.html barındırıyor.
+Bu repo [Siliconmade Academy](https://siliconmadeacademy.com/) Full Stack Eğitiminde oluşturduğumuz ilk repo. İçerisinde bir adet README dosyası, bir adet gitignore, bir adet png, bir adet css, bir adet js ve bir adet de index.html barındırıyor.
 
 HTML, CSS, JavaScript ve Bootstrap kullanarak resim galerisi sayfasını oluşturuldu.
 
