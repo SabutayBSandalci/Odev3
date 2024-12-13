@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+  
+    <link rel="stylesheet" href="css/a.css">
+</head>
+<body>
+  <nav class="navbar" >
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <img src="gallery.png" class="navbar-brand" href="#" style="width: 80px; "></img>
+        <a class="navbar-brand" href="index.html">Galeria</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="gallery.png" class="navbar-brand" href="#" style="width: 80px; "></img>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="" data-bs-toggle="modal" data-bs-target="#sekmeDetayModal" >Random Görsel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="" data-bs-toggle="modal" data-bs-target="#isyanDetayModal" >İsyanın var ise buyur</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" action="https://images.google.com/" method="GET">
+            <input class="form-control me-2" id="search" name="q" placeholder="Ara Bakalım" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Bulabilirsen</button>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="row gy-4 mt-1">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#resimDetayModal">
+          <img src="https://picsum.photos/id/47/1200" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#resimDetayModal">
+          <img src="https://picsum.photos/id/93/1200" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#resimDetayModal">
+          <img src="https://picsum.photos/id/51/1200" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#resimDetayModal">
+          <img src="https://picsum.photos/id/28/1200" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#resimDetayModal">
+          <img src="https://picsum.photos/id/79/1200" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#resimDetayModal">
+          <img src="https://picsum.photos/id/98/1200" class="card-img-top">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="resimDetayModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="card">
+          <img id="modalImage" src="" class="card-img-top">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="sekmeDetayModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="card">
+          <img id="modalImage" src="https://picsum.photos/200/300?random=1" class="card-img-top">
+          <p style="text-align: center;">Yenisi için sayfayı yenileyip tekrar tıklayın</p>
+        </div>
+      </div>
+    </div>
+  </div>,
+</div>
+
+<div class="modal fade" id="isyanDetayModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="card">
+          <iframe id="modalImage" width="560" height="315" src="https://www.youtube.com/embed/yD1PZM7LPmQ?si=D0A-ZAshqcjtiylT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  class="card-img-top"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+
+  let modal = document.getElementById('modalImage');
+
+   document.querySelectorAll(".card img").forEach(element => {
+    element.addEventListener('click', ()=>{
+      let src = element.getAttribute('src');
+      modal.setAttribute('src', src);
+    })
+   });
+  </script>
+
+    <script src="js/b.js"></script>
+</body>
+</html>
